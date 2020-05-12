@@ -1,12 +1,13 @@
-td {
+table td {
   border: 3px solid #f00;
   padding: 3rem;
 }
 
 table {
   border-collapse: collapse;
+  margin: auto;
 }
 
-table {
-  margin: 0 auto;
+.rotate {
+  transform: rotate(180deg);
 }
