@@ -10,4 +10,10 @@ table {
 
 .rotate {
   transform: rotate(180deg);
+  transition: .5s;
+}
+
+td:hover {
+  background-color: #b8b8b8;
+  color: blue;
 }
