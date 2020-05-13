@@ -1,15 +1,15 @@
 const cells = document.querySelectorAll(`td`);
-let lastRotatedElement;
+let lastRotatedCell;
 
 function rotateCell(){
     const rotated = this.classList.contains(`rotate`);
     if (!rotated){
         this.classList.add(`rotate`);
-        if (lastRotatedElement) lastRotatedElement.classList.remove(`rotate`);
-        lastRotatedElement = this;
+        if (lastRotatedCell) lastRotatedCell.classList.remove(`rotate`);
+        lastRotatedCell = this;
     } else {
         this.classList.remove(`rotate`);
-        lastRotatedElement = null;
+        lastRotatedCell = null;
     }
 }
 
